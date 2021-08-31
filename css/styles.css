@@ -3,8 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+body{
+    font-family: 'Sigmar One', cursive;
+    font-size: x-large;
+}
 .home{
-    background-image: url(../images/ash-edmonds-J6Dek60bX90-unsplash.jpg);
+    background-image: url(../images/mark-chan-rOtztBq2PM4-unsplash.jpg);
     text-align: center;
     font-weight: 1000;
     margin-top: 150px;
@@ -14,7 +22,7 @@
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-right: 100px;
     padding-bottom: 300px;
     padding-left: 100px;
@@ -86,4 +94,9 @@ nav{
 }
 .nav-active{
     transform: translateX(0%);
+}
+
+
+.tow{
+    height: 700px;
 }
