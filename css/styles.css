@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.home{
+    background-image: url(../images/ash-edmonds-J6Dek60bX90-unsplash.jpg);
+    text-align: center;
+    font-weight: 1000;
+    margin-top: 150px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: 300px;
+    padding-right: 100px;
+    padding-bottom: 300px;
+    padding-left: 100px;
+    background-repeat: no-repeat;
+    color: rgb(248, 247, 247);
+    object-fit: contain;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+}
+.logo{
+    color: cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links a{
+    color: cornsilk;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-links li{
+    list-style: none;
+}
