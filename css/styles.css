@@ -11,92 +11,35 @@ body{
     font-family: 'Sigmar One', cursive;
     font-size: x-large;
 }
-
-.home{
-    background-image: url(../images/mark-chan-rOtztBq2PM4-unsplash.jpg);
-    text-align: center;
-    font-weight: 1000;
-    margin-top: 150px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: cover;
-    padding-top: 200px;
-    padding-right: 100px;
-    padding-bottom: 300px;
-    padding-left: 100px;
-    background-repeat: no-repeat;
-    color: rgb(248, 247, 247);
-    object-fit: contain;
-}
-nav{
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    min-height: 8vh;
-    background-color: #5d4954;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
-.logo{
-    color: cornsilk;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 30px;
+section video{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+header{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.nav-links a{
-    color: cornsilk;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-.nav-links li{
-    list-style: none;
-}
-.burger{
-    display: none;
-    cursor: pointer;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: cornsilk;
-    margin: 5px;
-}
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }  
-}
-@media screen and (max-width:760px){
-    .nav-links{
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: #5d4954;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
-}
-.nav-active{
-    transform: translateX(0%);
-}
-
 .services h3{
     padding-top: 60px;
     padding-bottom: 50px;
@@ -127,3 +70,47 @@ h4{
     margin-left: 50px;
     margin-bottom: 20px;
 }
+.overlay{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.overlay-2{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+h1::before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background:white;
+    position: absolute;
+    right: 840px;
+    top: 50%;
+}
+h1::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background:white;
+    position: absolute;
+    right: 370px;
+    top: 50%;
+}
+
