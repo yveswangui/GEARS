@@ -60,8 +60,7 @@ h4{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
-    padding: 40px 0;
+    padding: 40px,0;
 }
 .row img{
     width: 500px;
@@ -113,4 +112,76 @@ h1::after{
     right: 370px;
     top: 50%;
 }
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
 
+.slide-row{
+    display: flex;
+    width: 3200px;
+}
+.slide-col{
+    width:800px;
+    height: 400px;
+    position: relative;
+}
+.review-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.review-img img{
+    height: 100%;
+    border-radius:10px;
+    
+}
+.user-text{
+    background: #2d3a59;
+    width:520px;
+    height:300px;
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding-left: 45px;
+    box-sizing: border-box;
+    font-size: 16px;
+    z-index: 2;
+}
+.user-text p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.my-container{
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 30%;
+    position:relative;
+    transform:translate(-50%,-50%);
+}
+.indicator{
+    position:relative;
+    left: 50%;
+    bottom: -50px;
+
+}
+.btn{
+    display:inline-flex;
+    height: 5px;
+    width: 2px;
+    margin: 2px;
+    border-radius: 20%;
+    background: #2d3a59;
+    cursor: pointer;
+    margin-top: 400px;
+}
+.active{
+   width:45px;
+}
